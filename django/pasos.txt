@@ -1,0 +1,18 @@
+Pasos seguidos
+1. Creación de un proyecto en Django con el comando "django-admin startproject ejemplo ."
+2. Creación de una aplicación con el comando "python manage.py startapp blog"
+3. Definir los modelos en el archivo models.py de la aplicación 
+4. Crear las vistas en el archivo views.py de la aplicación
+5. Ejecutar migraciones
+
+python manage.py makemigrations
+python manage.py migrate
+
+6. Escribir las pruebas unitarias en el archivos test.py
+a. Importa los modelos y vistas que deseas probar
+b. Define clases que hereden de django.test.TestCase
+c. Escribe métodos de prueba que comprueben el comportamiento deseado de tus modelos o vistas
+7. Ejecutar las pruebas con el comando "python manage.py test blog"
+8. Analizar los resultados
+
+PDT: recuerda añadir tu aplicación (en este caso "blog") a las aplicaciones instaladas en settings.py
